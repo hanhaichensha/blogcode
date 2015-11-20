@@ -1,8 +1,8 @@
 fancybox: true
 duoshuo: #duoshuo_shortname
 disqus: #disqus_shortname
-google_search: true
-baidu_search: #baidu_search
+google_search: #baidu_search
+baidu_search: true
 swiftype: #swiftype_key
 tinysou: #tinysou_key
 menu:
