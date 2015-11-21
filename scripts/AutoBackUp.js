@@ -1,6 +1,6 @@
 require('shelljs/global');
 
-var parseConfig = require('./parse_config');
+var parseConfig = require('hexo-deployer-git/lib/parse_config');
 var util = require('hexo/node_modules/hexo-util');
 var Promise = require('hexo/node_modules/bluebird');
 var spawn = util.spawn;
