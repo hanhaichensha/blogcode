@@ -28,7 +28,6 @@ function git() {
 
 function push(repo) {
     return git('add', '-A').then(function() {
-        git('reomote add', 'origin', repo.url);
         return git('commit', '-m', "Form auto backup script\'s commit").catch(function() {
             // Do nothing. It's OK if nothing to commit.
         });
@@ -42,7 +41,6 @@ function run() {
         echo('Sorry, this script require git');
     } else {
         echo("=======================Auto Backup Begin=======================");
-        cd(hexo.base_dir);
         var repos = parseConfig(hexo.config.backup);
         var len = repos.length,
             i = 0;
