@@ -2,6 +2,7 @@ require('shelljs/global');
 
 var parseConfig = require('./parse_config');
 var util = require('hexo/node_modules/hexo-util');
+var Promise = require('hexo/node_modules/bluebird');
 var spawn = util.spawn;
 
 try {
@@ -41,12 +42,15 @@ function run() {
         echo('Sorry, this script require git');
     } else {
         echo("=======================Auto Backup Begin=======================");
-        var repos = parseConfig(hexo.config.backup);
-        var len = repos.length,
-            i = 0;
-        for (; i < len; ++i) {
-            push(repos[i]);
-        }
+        Promise.each(parseConfig(hexo.config.backup),function(repo){
+            return push(repo);
+        });
+        // var repos = parseConfig(hexo.config.backup);
+        // var len = repos.length,
+        //     i = 0;
+        // for (; i < len; ++i) {
+        //     push(repos[i]);
+        // }
 
         // if (exec('git add --all').code !== 0) {
         //     echo("Error: Git add failed");
