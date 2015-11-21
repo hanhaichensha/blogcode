@@ -74,6 +74,12 @@ deploy:
   repo: 
     github: git@github.com:hanhaichensha/blog.git,gh-pages
     gitcafe: git@gitcafe.com:hanhaichensha/blog.git,gitcafe-pages
+# Auto Backup
+backup:
+  type: git
+  repo: 
+    github: git@github.com:hanhaichensha/blogcode.git,master
+    gitcafe: git@gitcafe.com:hanhaichensha/code.git,master
 
 # 评论
 # 1.友言

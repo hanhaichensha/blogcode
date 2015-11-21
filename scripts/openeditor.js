@@ -1,14 +1,13 @@
-
 var exec = require('child_process').exec;
-
+var parseConfig = require('./parse_config');
 // Hexo 2.x 用户复制这段
 // hexo.on('new', function(path){
-  // exec('start  "D:\\Program Files\\Sublime Text 3\\sublime_text.exe" ' + path);
+// exec('start  "D:\\Program Files\\Sublime Text 3\\sublime_text.exe" ' + path);
 // });
 
 // Hexo 3 用户复制这段
-hexo.on('new', function(data){
-	exec('start  /max "" "D:\\Program Files\\Sublime Text 3\\sublime_text.exe" ' + data.path);
+hexo.on('new', function(data) {
+    exec('start  /max "" "D:\\Program Files\\Sublime Text 3\\sublime_text.exe" ' + data.path);
 });
 
 /*=================windows code end======================*/
