@@ -1,6 +1,6 @@
 # Header
 menu:
-  主页: /
+  主页: /blog/
   归档: archives/
 rss: /blog/atom.xml
 
