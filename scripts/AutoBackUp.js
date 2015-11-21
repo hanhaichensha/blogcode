@@ -28,10 +28,9 @@ function git() {
 
 function push(repo) {
     return git('add', '-A').then(function() {
+        git('reomote add', 'origin', repo.url);
         return git('commit', '-m', "Form auto backup script\'s commit").catch(function() {
             // Do nothing. It's OK if nothing to commit.
-        }).then(function() {
-            return git('reomote', 'add origin', repo.url);
         });
     }).then(function() {
         return git('push', '-u', repo.url, 'master:' + repo.branch, '--force');
