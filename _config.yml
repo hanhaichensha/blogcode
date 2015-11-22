@@ -73,13 +73,13 @@ deploy:
   type: git
   repo: 
     github: git@github.com:hanhaichensha/blog.git,gh-pages
-    #gitcafe: git@gitcafe.com:hanhaichensha/blog.git,gitcafe-pages
+    gitcafe: git@gitcafe.com:hanhaichensha/blog.git,gitcafe-pages
 # 自动备份
 backup:
   type: git
   repo: 
     github: git@github.com:hanhaichensha/blogcode.git,master
-    #gitcafe: git@gitcafe.com:hanhaichensha/code.git,master
+    gitcafe: git@gitcafe.com:hanhaichensha/code.git,master
 
 # 评论
 # 1.友言
