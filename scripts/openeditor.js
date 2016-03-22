@@ -8,6 +8,7 @@ var parseConfig = require('./parse_config');
 // Hexo 3 用户复制这段
 hexo.on('new', function(data) {
     //exec('start  /max "" "D:\\Program Files\\Sublime Text 3\\sublime_text.exe" ' + data.path);
+	exec('mkdir "' + data.path + '"');
     exec('start  /max "" "D:\\Program Files\\MarkdownPad 2\\MarkdownPad2.exe" ' + data.path);
 });
 
