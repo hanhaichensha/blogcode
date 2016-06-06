@@ -86,10 +86,10 @@ backup:
 #uyan:
 #  enable: true
 # 2.多说
-#duoshuo_shortname: hanhaichensha
+duoshuo_shortname: hanhaichensha
 # 3.畅言
-changyan:
-  enable: true
+#changyan:
+#  enable: true
 
 # RSS订阅
 feed:
