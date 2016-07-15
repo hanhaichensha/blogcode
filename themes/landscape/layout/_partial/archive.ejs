@@ -5,6 +5,7 @@
   <% if (page.total > 1){ %>
     <nav id="page-nav">
       <%- paginator({
+		base: '/blog/',
         prev_text: '&laquo; Prev',
         next_text: 'Next &raquo;'
       }) %>
