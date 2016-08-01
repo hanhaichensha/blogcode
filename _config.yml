@@ -78,7 +78,7 @@ deploy:
 backup:
   type: git
   repo: 
-    #github: git@github.com:hanhaichensha/blogcode.git,master
+    github: git@github.com:hanhaichensha/blogcode.git,master
     coding: git@git.coding.net:hanhaichensha/code.git,master
 
 # 评论
