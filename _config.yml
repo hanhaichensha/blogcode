@@ -72,7 +72,7 @@ theme: landscape
 deploy:
   type: git
   repo: 
-    github: git@github.com:hanhaichensha/blog.git,gh-pages
+    #github: git@github.com:hanhaichensha/blog.git,gh-pages
     coding: git@git.coding.net:hanhaichensha/blog.git,coding-pages
 # 自动备份
 backup:
